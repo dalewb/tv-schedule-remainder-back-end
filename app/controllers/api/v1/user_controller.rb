@@ -10,10 +10,6 @@ class Api::V1::UserController < ApplicationController
     render json: @user
   end
 
-  def test
-    "hello"
-  end
-
   private
 
   def user_params
