@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       resources :shows, include: [:show, :index, :create]
       resources :episodes
       resources :seasons
-      resources :users, include: [:index, :create, :show]
+      resources :users, include: [:show, :index, :create]
     end
   end
 end
