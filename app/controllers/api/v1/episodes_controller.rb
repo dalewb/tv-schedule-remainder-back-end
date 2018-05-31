@@ -1,12 +1,13 @@
-class Api::V1::EpisodeController < ApplicationController
+class Api::V1::EpisodesController < ApplicationController
 
   def index
-    @episodes = episodes.all
+    @episodes = Episode.all
     render json: @episodes
   end
 
   def create
     @episode = Episode.create(episode_params)
+    render json: @episode
   end
 
   private
