@@ -20,6 +20,10 @@ ActiveRecord::Schema.define(version: 2018_05_29_193317) do
     t.text "description"
     t.string "img_url"
     t.string "view_time"
+<<<<<<< HEAD
+=======
+    t.string "cast"
+>>>>>>> f7b3d26a8b841d9295a4e96a598bc1a62857ede2
     t.integer "priority"
     t.integer "season_id"
     t.string "release_date"
@@ -30,7 +34,13 @@ ActiveRecord::Schema.define(version: 2018_05_29_193317) do
 
   create_table "seasons", force: :cascade do |t|
     t.integer "show_id"
+<<<<<<< HEAD
     t.string "air_date"
+=======
+    t.integer "year"
+    t.string "air_date"
+    t.string "cast"
+>>>>>>> f7b3d26a8b841d9295a4e96a598bc1a62857ede2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,7 +49,11 @@ ActiveRecord::Schema.define(version: 2018_05_29_193317) do
     t.string "title"
     t.text "description"
     t.string "img_url"
+<<<<<<< HEAD
     t.text "cast"
+=======
+    t.string "cast"
+>>>>>>> f7b3d26a8b841d9295a4e96a598bc1a62857ede2
     t.string "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
