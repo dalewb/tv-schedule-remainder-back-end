@@ -11,7 +11,8 @@ class Api::V1::ShowsController < ApplicationController
   end
 
   def create
-    @show = Show.create(show_params)
+    #byebug
+    @show = Show.find_or_create_by(show_params)
     render json: @show
   end
 
