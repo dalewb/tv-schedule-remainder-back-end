@@ -5,7 +5,6 @@ class CreateEpisodes < ActiveRecord::Migration[5.2]
       t.text :description
       t.string :img_url
       t.string :view_time
-      t.text :cast
       t.integer :priority
       t.integer :season_id
       t.string :release_date
