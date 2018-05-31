@@ -4,7 +4,7 @@ class CreateShows < ActiveRecord::Migration[5.2]
       t.string :title
       t.text :description
       t.string :img_url
-      t.string :cast
+      t.text :cast
       t.string :rating
 
       t.timestamps
