@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(version: 2018_05_29_193317) do
   end
 
   create_table "seasons", force: :cascade do |t|
-    t.integer "number"
     t.integer "show_id"
     t.integer "year"
     t.string "air_date"

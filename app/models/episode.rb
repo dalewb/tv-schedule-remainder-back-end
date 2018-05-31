@@ -1,4 +1,4 @@
 class Episode < ApplicationRecord
   belongs_to :season
-  validates :description
+  validates :description, uniqueness: true
 end

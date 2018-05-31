@@ -32,15 +32,15 @@ friends = Show.create(title: "Friends", description: Faker::Friends.quote, img_u
 simpsons = Show.create(title: "Simpsons", description: Faker::Simpsons.quote, img_url: "https://a248.e.akamai.net/ib.huluim.com/show_key_art/58?size=1600x600&region=US", cast: simpsons_cast, rating: "#{rand(1..10)}")
 
 # SEASONS
-bb_season_one = Season.create(number: 1, show_id: 1, year: 2000, air_date: "January 1st 2000", cast: bb_cast)
-bb_season_two = Season.create(number: 2, show_id: 1, year: 2001, air_date: "January 1st 2001", cast: bb_cast)
-bb_season_three = Season.create(number: 3, show_id: 1, year: 2002, air_date: "January 1st 2002", cast: bb_cast)
-friends_season_one = Season.create(number: 1, show_id: 2, year: 1997, air_date: "March 1st 1997", cast: friends_cast)
-friends_season_two = Season.create(number: 2, show_id: 2, year: 1998, air_date: "March 1st 1998", cast: friends_cast)
-friends_season_three = Season.create(number: 3, show_id: 2, year: 1999, air_date: "March 1st 1999", cast: friends_cast)
-simpsons_season_one = Season.create(number: 1, show_id: 3, year: 1990, air_date: "May 1st 1990", cast: simpsons_cast)
-simpsons_season_two = Season.create(number: 2, show_id: 3, year: 1991, air_date: "May 1st 1991", cast: simpsons_cast)
-simpsons_season_three = Season.create(number: 3, show_id: 3, year: 1992, air_date: "May 1st 1992", cast: simpsons_cast)
+bb_season_one = Season.create(show_id: 1, year: 2000, air_date: "January 1st 2000", cast: bb_cast)
+bb_season_two = Season.create(show_id: 1, year: 2001, air_date: "January 1st 2001", cast: bb_cast)
+bb_season_three = Season.create(show_id: 1, year: 2002, air_date: "January 1st 2002", cast: bb_cast)
+friends_season_one = Season.create(show_id: 2, year: 1997, air_date: "March 1st 1997", cast: friends_cast)
+friends_season_two = Season.create(show_id: 2, year: 1998, air_date: "March 1st 1998", cast: friends_cast)
+friends_season_three = Season.create(show_id: 2, year: 1999, air_date: "March 1st 1999", cast: friends_cast)
+simpsons_season_one = Season.create(show_id: 3, year: 1990, air_date: "May 1st 1990", cast: simpsons_cast)
+simpsons_season_two = Season.create(show_id: 3, year: 1991, air_date: "May 1st 1991", cast: simpsons_cast)
+simpsons_season_three = Season.create(show_id: 3, year: 1992, air_date: "May 1st 1992", cast: simpsons_cast)
 
 # EPISODES
 10.times do
