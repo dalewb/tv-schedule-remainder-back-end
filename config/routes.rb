@@ -8,8 +8,7 @@ Rails.application.routes.draw do
       resources :shows, include: [:show, :index, :create]
       resources :episodes
       resources :seasons
-      resources :users, include: [:show, :index, :create]
       get "users/:id/episodes", to: "users#get_episodes", as: "get_episodes"
-    end
+      resources :users, include: [:show, :index, :create]
   end
 end
