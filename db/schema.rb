@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2018_05_29_193317) do
 
   create_table "episodes", force: :cascade do |t|
     t.string "title"
-    t.string "description"
+    t.text "description"
     t.string "img_url"
     t.string "view_time"
     t.string "cast"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2018_05_29_193317) do
 
   create_table "shows", force: :cascade do |t|
     t.string "title"
-    t.string "description"
+    t.text "description"
     t.string "img_url"
     t.string "cast"
     t.string "rating"
