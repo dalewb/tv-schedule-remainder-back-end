@@ -16,7 +16,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def get_user_episodes
-    @user = User.find(params[:id])
+    # @user = User.find(params[:id])
     render json: Episode.all
   end
 
