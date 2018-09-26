@@ -23,7 +23,7 @@
 # end
 
 # USERS
-john = User.create(name: "William", email:"johnnystocks@gmail.com", password:"password")
+william = User.create(name: "William", email:"johnnystocks@gmail.com", password:"password")
 jane = User.create(name: "Jane", email:"janemoneybags@gmail.com", password:"1234")
 
 # SHOWS
